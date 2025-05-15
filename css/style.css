@@ -1,0 +1,516 @@
+/* ========================================
+   1. Tipografía (Fonts)
+======================================== */
+@font-face {
+    font-family: 'Switzer';
+    src: url('../webfonts/switzer/Switzer-Regular.woff2') format('woff2'),
+        url('../webfonts/switzer/Switzer-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../webfonts/switzer/Switzer-Medium.woff2') format('woff2'),
+        url('../webfonts/switzer/Switzer-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../webfonts/switzer/Switzer-Semibold.woff2') format('woff2'),
+        url('../webfonts/switzer/Switzer-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ========================================
+   2. Reset y Estilos Globales
+======================================== */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Switzer', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ========================================
+   3. Header
+======================================== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    z-index: 1000;
+}
+
+.menu-toggle-header {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+/* ========================================
+   4. Navegación
+======================================== */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 20px;
+    background: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    text-align: right;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* ========================================
+   5. Hero Section
+======================================== */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* ========================================
+   6. Servicios
+======================================== */
+.services {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-icon {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon img {
+    max-width: 30px;
+    height: auto;
+}
+
+/* ========================================
+   7. Footer
+======================================== */
+.site-footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   8. Contenido
+======================================== */
+.site-content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 60px;
+}
+
+.manual-layout {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.manual-content {
+    margin-left: 0;
+    padding: 20px;
+    margin: 0 10% 0 10%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.manual-content p {
+    margin-bottom: 15px;
+}
+
+.manual-content ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.manual-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   9. Sidebar
+======================================== */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    height: calc(100vh - 90px);
+    width: 80%;
+    padding: 20px;
+    background: #f8f8f8;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.sidebar.active {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: #f8f8f8;
+    z-index: 999;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-nav ul li a:hover {
+    color: #000;
+}
+
+/* ========================================
+   10. Botones de menú
+======================================== */
+.menu-toggle,
+.menu-toggle-sidebar {
+    display: none;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.menu-toggle-sidebar {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+/* Mostrar menú y sidebar siempre en pantallas grandes */
+@media (min-width: 992px) {
+
+    .menu-toggle-header,
+    .menu-toggle-sidebar {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 20px;
+        box-shadow: none;
+        background: transparent;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sidebar {
+        display: flex !important;
+        position: static;
+        width: 20%;
+        padding: 30px;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        padding-top: 0;
+        margin-right: 20px;
+    }
+
+    .manual-layout {
+        flex-direction: row;
+    }
+
+    .manual-content {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle-header {
+        display: block;
+    }
+
+    .nav-links {
+        padding-top: 100px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle-sidebar {
+        display: block;
+    }
+
+    .sidebar-nav ul {
+        padding-top: 100px;
+    }
+}
+
+/* ========================================
+   11. Formulario de contacto
+======================================== */
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: vertical;
+    /* Solo permite redimensionar verticalmente */
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.btn-submit {
+    margin: auto;
+    display: block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background: #222;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle-header {
+        display: block;
+    }
+
+    .nav-links {
+        padding-top: 100px;
+    }
+
+    textarea {
+        resize: none;
+        /* Desactiva el redimensionamiento en móviles */
+    }
+}
+
+/* ========================================
+   12. Contenido de texto
+======================================== */
+.text-content {
+    margin: 0 auto;
+    padding: 120px 0 50px 0;
+    width: 60%;
+    max-width: 800px;
+}

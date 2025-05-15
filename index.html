@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passworld - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <button class="menu-toggle-header" aria-label="Abrir menú">☰</button>
+                <nav class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="help.html">Ayuda</a>
+                    <a href="contact.html">Contacto</a>
+                    <a href="download.html">Descargas</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Protege tu información con Passworld</h1>
+                <p>Lleva tus contraseñas protegidas a dónde quiera que vayas y entérate si tus datos corren peligro
+                    en
+                    tiempo real.</p>
+                <div class="hero-carousel">
+                    <img src="images/light_mode.png" alt="Modo claro" class="carousel-image active">
+                    <img src="images/dark_mode.png" alt="Modo oscuro" class="carousel-image">
+                    <img src="images/signup-example.png" alt="Registrarse" class="carousel-image">
+                    <img src="images/login-example.png" alt="Iniciar sesión" class="carousel-image">
+                    <img src="images/vault-example.png" alt="Desbloquear baúl" class="carousel-image">
+                    <button class="carousel-button prev" aria-label="Imagen anterior">‹</button>
+                    <button class="carousel-button next" aria-label="Siguiente imagen">›</button>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const images = document.querySelectorAll(".carousel-image");
+                        const nextBtn = document.querySelector(".carousel-button.next");
+                        const prevBtn = document.querySelector(".carousel-button.prev");
+                        let current = 0;
+
+                        function showImage(index) {
+                            images.forEach((img, i) => {
+                                img.classList.toggle("active", i === index);
+                            });
+                        }
+
+                        nextBtn.addEventListener("click", () => {
+                            current = (current + 1) % images.length;
+                            showImage(current);
+                        });
+
+                        prevBtn.addEventListener("click", () => {
+                            current = (current - 1 + images.length) % images.length;
+                            showImage(current);
+                        });
+
+                        // Optional: Auto slide every 5 seconds
+                        setInterval(() => {
+                            current = (current + 1) % images.length;
+                            showImage(current);
+                        }, 5000);
+                    });
+                </script>
+
+
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="images/offline.png" alt="Offline icon">
+                        </div>
+                        <p>Puedes consultar, modificar tus contraseñas y consultar su índice de seguridad incluso
+                            sin
+                            internet.</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="images/cifrado.png" alt="Cypher Icon">
+                        </div>
+                        <p>Todos tus datos y contraseñas están cifrados en todo momento, asegurando su protección.
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="images/analisis.png" alt="Analysis Icon">
+                        </div>
+                        <p>Recibe alertas si alguno de tus datos se ve comprometido y otras recomendaciones de
+                            seguridad.</p>
+                        </p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="images/sync.png" alt="Sync Icon">
+                        </div>
+                        <p>Sincroniza tus datos en la nube y accede a ellos desde cualquier lugar con tu móvil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="help.html">Ayuda</a>
+                <a href="faq.html">Preguntas frecuentes</a>
+                <a href="terms-policies.html">Términos y políticas</a>
+                <a href="contact.html">Contacto</a>
+                <a href="download.html">Descargas</a>
+            </nav>
+        </div>
+        <p>Passworld | 2025</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
