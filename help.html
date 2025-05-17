@@ -30,7 +30,7 @@
 
         <!-- Barra de navegación lateral -->
         <aside class="sidebar">
-            <nav class="sidebar-nav">
+                        <nav class="sidebar-nav">
                 <ul>
                     <li><a href="#log-in">Iniciar Sesión</a></li>
                     <li><a href="#sign-up">Registrarse</a></li>
@@ -41,9 +41,7 @@
                     <li><a href="#desbloquear-vault">Protección del baúl</a></li>
                     <hr>
                     <li><a href="#generate-main">Generar contraseña personalizada</a></li>
-                    <hr>
                     <li><a href="#copy-main">Copiar contraseña generada desde la ventana principal</a></li>
-                    <hr>
                     <li><a href="#save-main">Guardar contraseña generada desde la ventana principal</a></li>
                     <hr>
                     <li><a href="#view-passwords">Ver mis contraseñas</a></li>
@@ -52,6 +50,11 @@
                     <li><a href="#sort-passwords">Listar mis contraseñas ordenadas según un criterio</a></li>
                     <li><a href="#search-passwords">Buscar contraseñas</a></li>
                     <hr>
+                    <li><a href="#create-my-passwords">Crear una contraseña desde la sección "Mis contraseñas"</a></li>
+                    <hr>
+                    <li><a href="#view-password-info">Consultar la información de una de mis contraseñas</a></li>
+                    <hr>
+                    <li><a href="#delete-password">Eliminar una contraseña</a></li>
                 </ul>
             </nav>
         </aside>
@@ -230,6 +233,87 @@
                     <li>URL</li>
                 </ul>
                 <img src="images/search-password-example.png" alt="Ejemplo de buscar contraseñas">
+            </section>
+
+            <hr>
+
+            <section id="create-my-passwords">
+                <h1>Crear una contraseña desde la sección "Mis contraseñas"</h1>
+                <p>Para cear una contraseña desde la sección "Mis contraseñas" bastará con pulsar el botón
+                    "+"</p>
+                <img src="images/create-button-mypasswords-example.png"
+                    alt="Ejemplo creado de contraseña desde la ventana 'Mis contraseñas'">
+                <br>
+                <p>A continuación, aparecerá un cuadro de diálogo para establecer algunos datos relacionados con la
+                    contraseña:</p>
+                <ul>
+                    <li>Descripción (obligatorio): Debes establecer un identificador para la contraseña</li>
+                    <li>Usuario (opcional): Puedes establecer un nombre de usuario o correo electrónico asociado a
+                        la
+                        contraseña</li>
+                    <li>URL (opcional): Puedes establecer una URL para la plataforma asociada a la contraseña</li>
+                    <li>Contraseña (obligatorio): Podrás escribir una contraseña o generarla con el botón
+                        correspondiente</li>
+                </ul>
+                <p>Una vez establezcas los datos que quieras guardar junto a la contraseña, pulsa sobre el botón
+                    "Guardar" para guardarla</p>
+                <p>Si no quieres guardar la contraseña, puedes pulsar el botón "Cancelar" para volver a la ventana
+                    principal</p>
+                <img src="images/create-data-mypasswords-example.png"
+                    alt="Ejemplo guardado de contraseña desde la ventana 'Mis contraseñas'">
+            </section>
+
+            <hr>
+
+            <section id="view-password-info">
+                <h1>Consultar la información de una de mis contraseñas</h1>
+                <p>Para consultar la información de una de tus contraseñas deberás pulsar sobre ella</p>
+                <p>A continuación, aparecerá una ventana con los todos los datos de la contraseña, además de un
+                    indicador sobre su fortaleza y una sección con información sobre el estado de seguridad de sus
+                    datos.</p>
+                <img src="images/view-password-info-example.png"
+                    alt="Ejemplo de consultar la información de una contraseña">
+                <br>
+                <p>El indicador de fortaleza de contraseña tiene cinco posibles valores:</p>
+                <ol>
+                    <li>Muy débil: La contraseña es muy fácil de adivinar y debes modificarla</li>
+                    <li>Débil: La contraseña es fácil de adivinar y debes modificarla</li>
+                    <li>Media: La contraseña es aceptable, pero puedes mejorarla</li>
+                    <li>Fuerte: La contraseña es difícil de adivinar, pero puedes mejorarla</li>
+                    <li>Muy fuerte: La contraseña es muy difícil de adivinar y no es necesario modificarla</li>
+                </ol>
+                <br>
+                <p>La sección de información del estado de seguridad de los datos de una contraseña puede mostrar varios
+                    mensajes:</p>
+                <ul>
+                    <li>Sin problemas de seguridad: Tus datos están seguros</li>
+                    <li>Contraseña comprometida: La contraseña ha sido expuesta en una brecha de seguridad y debes
+                        modificarla</li>
+                    <li>Contraseña duplicada: La contraseña se ha utilizado en varias plataformas y te recomendamos
+                        modificarla</li>
+                    <li>Contraseña débil: La contraseña es fácil de adivinar y debes modificarla.*
+                        <br> *Nota: Este mensaje aparecerá si la contraseña tiene un indicador de fortaleza de "muy
+                        débil" o
+                        "débil"
+                    </li>
+                    <li>URL comprometida: La URL ha sido expuesta en una brecha de seguridad o está relacionada con
+                        actividades sospechosas y te recomendamos</li>
+                </ul>
+                <img src="images/issue-password-example.png"
+                    alt="Ejemplo de contraseña con problemas de seguridad">
+                <br>
+                <p>La contraseña aparece oculta por seguridad. Para mostrarla bastará con pulsar sobre ella. <br>Una vez
+                    descubierta, podrás copiarla o regenerarla con los botones correspondientes.</p>
+                <img src="images/show-password-example.png" alt="Ejemplo de mostrar la contraseña">
+                <p>Puedes eliminar la contraseña pulsando el botón 'Eliminar'</p>
+            </section>
+
+            <section id="delete-password">
+                <h1>Eliminar una contraseña</h1>
+                <p>Para eliminar una contraseña debes acceder a su información y pulsar sobre el botón 'Eliminar'<br>Se
+                    te pedirá confirmación antes de la eliminación permanente. <br>Una contraseña eliminada es irrecuperable.</p>
+                <img src="images/delete-password-example.png"
+                    alt="Ejemplo de eliminar contraseña">
             </section>
 
         </main>

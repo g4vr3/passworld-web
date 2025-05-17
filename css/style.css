@@ -408,6 +408,12 @@ body {
     .manual-content {
         flex: 1;
     }
+
+    .manual-content img {
+        max-width: 500px;
+        height: auto;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -502,6 +508,16 @@ textarea {
     textarea {
         resize: none;
         /* Desactiva el redimensionamiento en móviles */
+    }
+
+    .sidebar {
+        padding-bottom: 20px;
+    }
+
+    .contact-content {
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
