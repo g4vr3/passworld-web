@@ -406,6 +406,8 @@ body {
 
     .manual-content {
         flex: 1;
+        margin: 0 100px 0 100px;
+        max-width: 50%;
     }
 
     .manual-content img {
@@ -586,7 +588,7 @@ textarea {
     background: #444;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .downloads-list {
         flex-direction: column;
         align-items: center;
@@ -597,4 +599,11 @@ textarea {
         width: 90%;
         max-width: 400px;
     }
+}
+
+pre {
+    overflow-x: auto;
+    white-space: pre;
+    word-break: break-all;
+    max-width: 100%;
 }

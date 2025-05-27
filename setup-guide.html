@@ -130,10 +130,42 @@
                     abrirlo.</p>
 
                 <h2>Desinstalar completamente</h2>
-                <p>Si quieres eliminar Passworld y todos sus datos, ejecuta los siguientes comandos:</p>
+                <p>Si quieres eliminar Passworld y todos sus datos, ejecuta los siguientes comandos en la terminal:</p>
                 <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px;">sudo apt purge passworld
 sudo apt autoremove --purge
 rm -rf ~/.local/share/passworld</pre>
+            </section>
+
+            <hr>
+
+            <section id="macos-setup-guide">
+                <h1>macOS (Apple Silicon)</h1>
+
+                <h3>1. Descargar el archivo <code>.dmg</code></h3>
+                <p>Puedes descargar el archivo oficial desde este
+                    <a href="#macos-applesilicon-link" style="color: #333;" target="_blank">
+                        enlace
+                    </a>.
+                </p>
+
+                <h3>2. Instalar la aplicación</h3>
+                <ol>
+                    <li>Localiza el archivo <code>.dmg</code> en Finder y haz doble clic sobre él</li>
+                    <li>Arrastra el icono de Passworld a la carpeta de Aplicaciones <img src="images/mac-setup-drag.png"
+                            alt="Ejemplo de instalar PASSWORLD en macOS">
+                    </li>
+
+                </ol>
+
+                <h3>3. Ejecutar Passworld</h3>
+                <p>Después de instalarlo, encontrarás Passworld en el menú de aplicaciones. Haz clic en el icono para
+                    abrirlo. También puedes utilizar la búsqueda Spotlight para encontrarlo.</p>
+
+                <h2>Desinstalar completamente</h2>
+                <p>Si quieres eliminar Passworld y todos sus datos, ejecuta los siguientes comandos en la terminal:</p>
+                <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px;">rm -rf /Applications/passworld.app
+rm -rf /Users/g4vr3/Library/Application Support/passworld
+rm -rf /Users/g4vr3/Library/Saved Application State/com.g4vr3.passworld.savedState</pre>
             </section>
 
         </main>
