@@ -369,7 +369,7 @@ body {
 }
 
 /* Mostrar menú y sidebar siempre en pantallas grandes */
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
 
     .menu-toggle-header,
     .menu-toggle-sidebar {
@@ -440,6 +440,15 @@ body {
 
     .carousel-image {
         width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-toggle-header {
+        display: block;
+    }
+    .nav-links {
+        display: none;
     }
 }
 
