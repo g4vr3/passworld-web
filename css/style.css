@@ -160,7 +160,7 @@ body {
 
 .carousel-image {
     display: none;
-    width: 800px;
+    width: 700px;
     height: auto;
     margin: 0 auto;
     transition: opacity 0.5s ease;
@@ -435,6 +435,10 @@ body {
     .sidebar-nav ul {
         padding-top: 100px;
     }
+
+    .carousel-image {
+        width: 80vw;
+    }
 }
 
 /* ========================================
@@ -554,7 +558,7 @@ textarea {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     padding: 30px 40px;
     text-align: center;
     min-width: 220px;
@@ -588,6 +592,7 @@ textarea {
         align-items: center;
         gap: 20px;
     }
+
     .download-item {
         width: 90%;
         max-width: 400px;

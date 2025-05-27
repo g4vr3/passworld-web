@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passworld - Manual de instalación</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="./index.html" class="logo"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <button class="menu-toggle-header" aria-label="Abrir menú">☰</button>
+                <nav class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="user-guide.html">Manual de usuario</a>
+                    <a href="contact.html">Contacto</a>
+                    <a href="download.html">Descargas</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="manual-layout">
+        <!-- Botón para el menú del manual -->
+        <button class="menu-toggle-sidebar" aria-label="Abrir menú del manual de instalación">☰</button>
+
+        <!-- Barra de navegación lateral -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#windows-setup-guide">Windows</a></li>
+                    <hr>
+                    <li><a href="#linux-setup-guide">Linux</a></li>
+                    <hr>
+                    <li><a href="#macos-setup-guide">macOS</a></li>
+                    <hr>
+                    <li><a href="#android-setup-guide">Android</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="manual-content">
+            <h1>Manuales de instalación</h1>
+            <p>A continuación, se muestra una guía detallada sobre como instalar PASSWORLD en las distintas plataformas
+                soportadas.</p>
+            <hr>
+
+            <section id="windows-setup-guide">
+                <h1>Windows</h1>
+                <h2>1. Con el ejecutable <code>.exe</code></h2>
+                <h3>1.1 Descargar el ejecutable</h3>
+                <p>Puedes descargar el ejecurable oficial desde este
+                    <a href="#windows-exe-link" style="color: #333;" target="_blank">
+                        enlace
+                    </a>.
+                </p>
+
+                <h3>1.2 Ejecuta el archivo</h3>
+                <p>Localiza el archivo <code>.exe</code> descargado y haz doble clic sobre él para iniciar la
+                    instalación.
+                    Sigue las instrucciones en pantalla. Podrás elegir la carpeta dónde se instalará.</p>
+
+                <h3>1.3 Ejecutar Passworld</h3>
+                <p>Después de instalarlo, se creará un acceso directo en tu escritorio. También encontrarás Passworld en
+                    el menú de aplicaciones. Haz clic en el icono para
+                    abrirlo.</p>
+
+
+                <h2>1. Con el instalador <code>.msi</code></h2>
+                <h3>1.1 Descargar el instalador</h3>
+                <p>Puedes descargar el instalador oficial desde este
+                    <a href="#windows-msi-link" style="color: #333;" target="_blank">
+                        enlace
+                    </a>.
+                </p>
+
+                <h3>1.2 Ejecuta el instalador</h3>
+                <p>Localiza el archivo <code>.msi</code> descargado y haz doble clic sobre él para iniciar la
+                    instalación.
+                    Sigue las instrucciones en pantalla. Podrás elegir la carpeta dónde se instalará.</p>
+
+                <h3>1.3 Ejecutar Passworld</h3>
+                <p>Después de instalarlo, se creará un acceso directo en tu escritorio. También encontrarás Passworld en
+                    el menú de aplicaciones. Haz clic en el icono para
+                    abrirlo.</p>
+
+                <h2>Desinstalar completamente</h2>
+                <p>Si quieres eliminar Passworld y todos sus datos, sigue estos pasos:</p>
+                <ol>
+                    <li>Ve a Configuración</li>
+                    <li>Dirígete a la sección "Aplicacines > Aplicaciónes instaladas"</li>
+                    <li>Busca la aplicación passworld</li>
+                    <li>Pulsa sobre el icono de los tres puntos y elige "Desinstalar"</li>
+                </ol>
+                <img src="images/windows-uninstall-example.png" alt="Ejemplo de desinstalar PASSWORLD en Windows">
+
+            </section>
+
+            <hr>
+
+            <section id="linux-setup-guide">
+                <h1>Linux (Basado en Debian)</h1>
+
+                <h3>1. Descargar el paquete <code>.deb</code></h3>
+                <p>Puedes descargar el paquete oficial desde este
+                    <a href="#linux-deb-link" style="color: #333;" target="_blank">
+                        enlace
+                    </a>.
+                </p>
+
+                <h3>2. Instalar el paquete</h3>
+                <p>Puedes instalar PASSWORLD desde la terminal o a través del Centro de Software si utilizas Ubuntu.</p>
+                <h4>Instalar desde la terminal</h4>
+                <p>Abre una terminal y ejecuta este comando para instalar el paquete:</p>
+                <pre
+                    style="background: #f4f4f4; padding: 10px; border-radius: 4px;">sudo dpkg -i passworld_1.0.0.deb</pre>
+                <h4>Instalar desde el
+                    Centro de Software de Ubuntu</h4>
+                <p>Localiza el paquete <code>.deb</code> en tu explorador de archivos y haz doble clic sobre él para
+                    instalarlo.</p>
+
+                <h3>3. Ejecutar Passworld</h3>
+                <p>Después de instalarlo, encontrarás Passworld en el menú de aplicaciones. Haz clic en el icono para
+                    abrirlo.</p>
+
+                <h2>Desinstalar completamente</h2>
+                <p>Si quieres eliminar Passworld y todos sus datos, ejecuta los siguientes comandos:</p>
+                <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px;">sudo apt purge passworld
+sudo apt autoremove --purge
+rm -rf ~/.local/share/passworld</pre>
+            </section>
+
+        </main>
+
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="user-guide.html">Manual de usuario</a>
+                <a href="terms-policies.html">Términos y políticas</a>
+                <a href="contact.html">Contacto</a>
+                <a href="download.html">Descargas</a>
+                <a href="setup-guide.html">Manual de instalación</a>
+            </nav>
+        </div>
+        <p style="color: #fff;">Desarrollado por <a href="https://github.com/g4vr3" style="color: #fff;">g4vr3</a> y <a
+                href="https://github.com/jagudo27" style="color: #fff;">jagudo27</a></p>
+        </p>
+        <p>Passworld | 2025</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
