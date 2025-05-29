@@ -32,6 +32,8 @@
         <aside class="sidebar">
             <nav class="sidebar-nav">
                 <ul>
+                    <!-- Manual de la Aplicación Principal -->
+                    <li class="sidebar-section-title">Aplicación Principal</li>
                     <li><a href="#first-steps">Primeros pasos</a></li>
                     <li><a href="#log-in">Iniciar sesión</a></li>
                     <li><a href="#sign-up">Registrarse</a></li>
@@ -60,6 +62,19 @@
                     <li><a href="#delete-password">Eliminar una contraseña</a></li>
                     <hr>
                     <li><a href="#about">Consultar información sobre la aplicación</a></li>
+
+                    <!-- Separador entre manuales -->
+                    <hr class="manual-separator">
+
+                    <!-- Manual de la Extensión de Navegador -->
+                    <li class="sidebar-section-title">Extensión de Navegador</li>
+                    <li><a href="#browser-extension">Introducción a la extensión</a></li>
+                    <li><a href="#extension-login">Iniciar sesión en la extensión</a></li>
+                    <li><a href="#extension-unlock">Desbloquear baúl en la extensión</a></li>
+                    <li><a href="#extension-autofill">Rellenar automáticamente formularios</a></li>
+                    <li><a href="#extension-copy">Copiar contraseñas desde la extensión</a></li>
+                    <li><a href="#extension-view">Ver contraseñas guardadas</a></li>
+                    <li><a href="#extension-logout">Cerrar sesión en la extensión</a></li>
 
                 </ul>
             </nav>
@@ -368,6 +383,154 @@
                         aplicación
                         que encontrarás en la parte superior de Passworld en la mayoría de ventanas.</p>
                     <img src="images/about-example.png" alt="Ejemplo de consultar información sobre la aplicación">
+                </section>
+
+                <hr class="manual-separator">
+
+                <section id="browser-extension">
+                    <h1>Manual de la extensión de navegador</h1>
+                    <p>La extensión de navegador de Passworld te permite acceder a tus contraseñas directamente desde tu
+                        navegador web y rellenar automáticamente formularios de inicio de sesión.</p>
+                    <p>La extensión funciona con navegadores basados en Chromium como Chrome, Edge, Brave y Opera.</p>
+                    <p><strong>Nota:</strong> Para usar la extensión necesitas tener una cuenta de Passworld ya creada y
+                        configurada.</p>
+                </section>
+
+                <hr>
+
+                <section id="extension-login">
+                    <h1>Iniciar sesión en la extensión</h1>
+                    <p>Para iniciar sesión en la extensión de navegador:</p>
+                    <ol>
+                        <li>Haz clic en el icono de Passworld en la barra de herramientas del navegador</li>
+                        <li>Aparecerá una ventana emergente con el formulario de inicio de sesión</li>
+                        <li>Introduce tu correo electrónico en el campo "Correo electrónico"</li>
+                        <li>Introduce tu contraseña de cuenta en el campo "Contraseña"</li>
+                        <li>Haz clic en "Iniciar sesión" o presiona Enter</li>
+                    </ol>
+                    <p>Si los datos son correctos, serás redirigido a la pantalla de contraseña maestra.</p>
+                    <p><strong>Nota:</strong> Puedes usar las teclas Tab para navegar entre los campos y Enter para
+                        confirmar.</p>
+                    <img src="images/web-extension-login.png" alt="Ejemplo iniciar sesión en la extensión">
+                </section>
+
+                <hr>
+
+                <section id="extension-unlock">
+                    <h1>Desbloquear baúl en la extensión</h1>
+                    <p>Después de iniciar sesión correctamente, necesitas desbloquear tu baúl de contraseñas:</p>
+                    <ol>
+                        <li>Introduce tu contraseña maestra en el campo correspondiente</li>
+                        <li>Haz clic en "Desbloquear" o presiona Enter</li>
+                        <li>El sistema verificará tu contraseña maestra</li>
+                        <li>Si es correcta, se mostrarán tus contraseñas guardadas</li>
+                    </ol>
+                    <p>La extensión recordará tu sesión durante 30 minutos de inactividad.</p>
+                    <p><strong>Importante:</strong> Si olvidas tu contraseña maestra, no podrás acceder a tus
+                        contraseñas guardadas.</p>
+                    <img src="images/web-extension-vault.png" alt="Ejemplo desbloquear baúl en la extensión">
+                </section>
+
+                <hr>
+
+                <section id="extension-autofill">
+                    <h1>Rellenar automáticamente formularios</h1>
+                    <p>La extensión puede rellenar automáticamente formularios de inicio de sesión:</p>
+                    <ol>
+                        <li>Navega a una página web con un formulario de login</li>
+                        <li>Haz clic en el icono de Passworld</li>
+                        <li>Se mostrarán las contraseñas, priorizando las del sitio actual</li>
+                        <li>Haz clic en cualquier tarjeta de contraseña para rellenar automáticamente los campos</li>
+                    </ol>
+
+                    <h3>Organización de contraseñas</h3>
+                    <ul>
+                        <li><strong>"De este sitio":</strong> Contraseñas que coinciden con la URL actual</li>
+                        <li><strong>"Todas las contraseñas":</strong> Resto de contraseñas guardadas</li>
+                    </ul>
+
+                    <h3>Información mostrada en cada contraseña</h3>
+                    <ul>
+                        <li><strong>Descripción:</strong> Nombre identificativo de la contraseña</li>
+                        <li><strong>Usuario:</strong> Nombre de usuario o email asociado</li>
+                        <li><strong>URL:</strong> Sitio web asociado</li>
+                        <li><strong>Contraseña:</strong> Oculta por defecto, se puede mostrar/ocultar</li>
+                    </ul>
+                    <img src="images/web-extension-autofill.png" alt="Ejemplo autorrelleno en la extensión">
+                </section>
+
+                <hr>
+
+                <section id="extension-view">
+                    <h1>Ver contraseñas guardadas</h1>
+                    <p>La extensión te permite ver todas tus contraseñas guardadas:</p>
+
+                    <h3>Contraseñas recomendadas</h3>
+                    <p>Las contraseñas que coinciden con el sitio web actual aparecen destacadas en la sección "De este
+                        sitio" con:</p>
+                    <ul>
+                        <li>Borde más oscuro para mejor visibilidad</li>
+                        <li>Fondo ligeramente diferente</li>
+                        <li>Posición prioritaria en la lista</li>
+                    </ul>
+
+                    <h3>Funciones disponibles para cada contraseña</h3>
+                    <ul>
+                        <li><strong>Clic en la tarjeta:</strong> Rellena automáticamente los campos de la página</li>
+                        <li><strong>"Mostrar contraseña":</strong> Revela u oculta la contraseña</li>
+                        <li><strong>Icono de copiar:</strong> Copia la contraseña al portapapeles</li>
+                    </ul>
+
+                    <h3>Información de campos</h3>
+                    <p>Si algún campo muestra "Sin usuario" o "Sin URL", significa que esa información no fue guardada
+                        originalmente.</p>
+                </section>
+
+                <hr>
+
+                <section id="extension-copy">
+                    <h1>Copiar contraseñas desde la extensión</h1>
+                    <p>Para copiar una contraseña al portapapeles:</p>
+                    <ol>
+                        <li>Haz clic en "Mostrar contraseña ⏷" para revelar la contraseña</li>
+                        <li>Haz clic en el icono de copiar junto a la contraseña</li>
+                        <li>La contraseña se copiará automáticamente al portapapeles</li>
+                        <li>El icono se animará brevemente para confirmar la copia</li>
+                    </ol>
+
+                    <p>Una vez copiada, puedes pegarla manualmente en cualquier campo usando Ctrl+V (Windows/Linux) o
+                        Cmd+V (macOS).</p>
+                    <img src="images/web-extension-copy.png" alt="Ejemplo copiar contraseñas desde la extensión">
+
+                </section>
+
+                <hr>
+
+                <section id="extension-logout">
+                    <h1>Cerrar sesión en la extensión</h1>
+                    <p>Para cerrar sesión en la extensión:</p>
+                    <ol>
+                        <li>Haz clic en el icono de Passworld para abrir la extensión</li>
+                        <li>Desplázate hasta el final de la lista de contraseñas</li>
+                        <li>Haz clic en "Cerrar sesión" (aparece como un enlace subrayado)</li>
+                        <li>Confirma que quieres cerrar la sesión</li>
+                    </ol>
+
+                    <h3>¿Qué sucede al cerrar sesión?</h3>
+                    <ul>
+                        <li>Se borran todos los datos de sesión locales</li>
+                        <li>Las contraseñas descifradas se eliminan de la memoria</li>
+                        <li>Regresarás a la pantalla de inicio de sesión</li>
+                        <li>Los campos de email y contraseña se limpian automáticamente</li>
+                    </ul>
+
+                    <h3>Cierre automático de sesión</h3>
+                    <p>La extensión cierra automáticamente la sesión después de 30 minutos de inactividad por seguridad.
+                    </p>
+                    <p><strong>Recomendación:</strong> Cierra siempre la sesión cuando uses ordenadores compartidos o
+                        públicos.</p>
+                    <img src="images/web-extension-logout.png" alt="Ejemplo cerrar sesión en la extensión">
+
                 </section>
 
         </main>

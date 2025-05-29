@@ -340,6 +340,32 @@ body {
     color: #000;
 }
 
+/* Estilos para títulos de sección del sidebar */
+.sidebar-section-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+    background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Separador especial entre manuales */
+hr.manual-separator {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, #ddd, #bbb, #ddd);
+    margin: 25px 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* ========================================
    10. Botones de menú
 ======================================== */
