@@ -43,6 +43,38 @@
             </div>
         </section>
 
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const images = document.querySelectorAll(".carousel-image");
+                        const nextBtn = document.querySelector(".carousel-button.next");
+                        const prevBtn = document.querySelector(".carousel-button.prev");
+                        let current = 0;
+
+                        function showImage(index) {
+                            images.forEach((img, i) => {
+                                img.classList.toggle("active", i === index);
+                            });
+                        }
+
+                        nextBtn.addEventListener("click", () => {
+                            current = (current + 1) % images.length;
+                            showImage(current);
+                        });
+
+                        prevBtn.addEventListener("click", () => {
+                            current = (current - 1 + images.length) % images.length;
+                            showImage(current);
+                        });
+
+                        // Optional: Auto slide every 5 seconds
+                        setInterval(() => {
+                            current = (current + 1) % images.length;
+                            showImage(current);
+                        }, 5000);
+                    });
+                </script>
+
         <section class="services">
             <div class="container">
                 <div class="services-grid">
