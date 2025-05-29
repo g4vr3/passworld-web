@@ -37,6 +37,7 @@
                     <img src="images/signup-example.png" alt="Registrarse" class="carousel-image">
                     <img src="images/login-example.png" alt="Iniciar sesión" class="carousel-image">
                     <img src="images/vault-example.png" alt="Desbloquear baúl" class="carousel-image">
+                    <img src="images/web-extension.png" alt="Extensión de navegador" class="carousel-image">
                     <button class="carousel-button prev" aria-label="Imagen anterior">‹</button>
                     <button class="carousel-button next" aria-label="Siguiente imagen">›</button>
                 </div>
@@ -44,36 +45,36 @@
         </section>
 
 
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const images = document.querySelectorAll(".carousel-image");
-                        const nextBtn = document.querySelector(".carousel-button.next");
-                        const prevBtn = document.querySelector(".carousel-button.prev");
-                        let current = 0;
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const images = document.querySelectorAll(".carousel-image");
+                const nextBtn = document.querySelector(".carousel-button.next");
+                const prevBtn = document.querySelector(".carousel-button.prev");
+                let current = 0;
 
-                        function showImage(index) {
-                            images.forEach((img, i) => {
-                                img.classList.toggle("active", i === index);
-                            });
-                        }
-
-                        nextBtn.addEventListener("click", () => {
-                            current = (current + 1) % images.length;
-                            showImage(current);
-                        });
-
-                        prevBtn.addEventListener("click", () => {
-                            current = (current - 1 + images.length) % images.length;
-                            showImage(current);
-                        });
-
-                        // Optional: Auto slide every 5 seconds
-                        setInterval(() => {
-                            current = (current + 1) % images.length;
-                            showImage(current);
-                        }, 5000);
+                function showImage(index) {
+                    images.forEach((img, i) => {
+                        img.classList.toggle("active", i === index);
                     });
-                </script>
+                }
+
+                nextBtn.addEventListener("click", () => {
+                    current = (current + 1) % images.length;
+                    showImage(current);
+                });
+
+                prevBtn.addEventListener("click", () => {
+                    current = (current - 1 + images.length) % images.length;
+                    showImage(current);
+                });
+
+                // Optional: Auto slide every 5 seconds
+                setInterval(() => {
+                    current = (current + 1) % images.length;
+                    showImage(current);
+                }, 5000);
+            });
+        </script>
 
         <section class="services">
             <div class="container">
