@@ -616,3 +616,56 @@ pre {
     word-break: break-all;
     max-width: 100%;
 }
+
+/* ========================================
+   14. Sección Extensión de Navegador
+======================================== */
+.browser-extension {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.browser-extension h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.browser-extension p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browser-extension img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .browser-extension {
+        padding: 30px 0;
+    }
+    
+    .browser-extension h2 {
+        font-size: 1.5rem;
+    }
+    
+    .browser-extension p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .browser-extension img {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
