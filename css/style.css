@@ -708,3 +708,30 @@ pre {
         margin: 0 auto;
     }
 }
+
+/* ========================================
+   Android App Images - Altura uniforme
+======================================== */
+/* Estilos específicos para imágenes de la aplicación Android */
+img[src*="android-"] {
+    height: 400px !important;
+    width: auto !important;
+    max-width: none !important;
+    object-fit: contain;
+    margin: 20px 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    img[src*="android-"] {
+        height: 350px !important;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    img[src*="android-"] {
+        height: 300px !important;
+        margin: 10px 0;
+    }
+}

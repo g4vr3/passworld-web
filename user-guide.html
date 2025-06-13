@@ -77,6 +77,31 @@
                     <li><a href="#extension-view">Ver contraseñas guardadas</a></li>
                     <li><a href="#extension-logout">Cerrar sesión en la extensión</a></li>
 
+                    <!-- Separador entre manuales -->
+                    <hr class="manual-separator">
+
+                    <!-- Manual de la Aplicación Android -->
+                    <li class="sidebar-section-title">Aplicación Android</li>
+                    <li><a href="#android-login">Iniciar sesión en Android</a></li>
+                    <li><a href="#android-signup-email">Registrarse con correo/contraseña</a></li>
+                    <li><a href="#android-signup-google">Registro con Google</a></li>
+                    <li><a href="#android-logout">Cerrar sesión en Android</a></li>
+                    <hr>
+                    <li><a href="#android-language">Cambiar idioma en Android</a></li>
+                    <li><a href="#android-theme">Cambiar tema en Android</a></li>
+                    <li><a href="#android-help">Abrir la ayuda en Android</a></li>
+                    <hr>
+                    <li><a href="#android-unlock-vault">Desbloquear baúl en Android</a></li>
+                    <hr>
+                    <li><a href="#android-filter-passwords">Filtrar contraseñas por estado de seguridad</a></li>
+                    <li><a href="#android-sort-passwords">Ordenar contraseñas según criterio</a></li>
+                    <li><a href="#android-search-passwords">Buscar contraseñas en Android</a></li>
+                    <hr>
+                    <li><a href="#android-generate-password">Generar una nueva contraseña</a></li>
+                    <li><a href="#android-save-password">Guardar contraseña generada</a></li>
+                    <hr>
+                    <li><a href="#android-view-password">Consultar información de una contraseña</a></li>
+
                 </ul>
             </nav>
         </aside>
@@ -516,9 +541,180 @@
                     <p>La extensión cierra automáticamente la sesión después de 30 minutos de inactividad por seguridad.
                     </p>
                     <p><strong>Recomendación:</strong> Cierra siempre la sesión cuando uses ordenadores compartidos o
-                        públicos.</p>
-                    <img src="images/web-extension-logout.png" alt="Ejemplo cerrar sesión en la extensión">
+                        públicos.</p>                    <img src="images/web-extension-logout.png" alt="Ejemplo cerrar sesión en la extensión">
 
+                </section>
+
+                <hr class="manual-separator">
+
+                <section id="android-login">
+                    <h1>Manual de la aplicación Android</h1>
+                    <p>La aplicación Android de Passworld te permite acceder y gestionar tus contraseñas desde cualquier dispositivo móvil Android. La aplicación incluye todas las funcionalidades esenciales del gestor de contraseñas.</p>
+                    <p><strong>Nota:</strong> Para usar la aplicación necesitas tener una cuenta de Passworld ya creada o registrar una nueva.</p>
+
+                    <h2>Iniciar sesión</h2>
+                    <p>Para iniciar sesión será necesario conocer los siguientes datos:</p>
+                    <ol>
+                        <li>Correo electrónico con el que se creó la cuenta</li>
+                        <li>Contraseña de la cuenta</li>
+                    </ol>
+                    <p>Bastará con introducir los datos requeridos y pulsar el botón correspondiente.</p>
+                    <p>Adicionalmente, se podrá iniciar sesión utilizando una cuenta de Google pulsando en el botón correspondiente.</p>
+                    <img src="images/android-login-example.png" alt="Ejemplo de inicio de sesión en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-signup-email">
+                    <h1>Registrarse con correo/contraseña</h1>
+                    <p>Para registrarse en la aplicación, inicialmente solo se solicitan los siguientes datos:</p>
+                    <ol>
+                        <li>Correo electrónico</li>
+                        <li>Contraseña de la cuenta</li>
+                    </ol>                    <p>Después de completar el registro con estos datos, se abrirá otro diálogo para que el usuario establezca su contraseña maestra del baúl, necesaria para consultar y proteger las contraseñas almacenadas.</p>
+                    <img src="images/android-signup-email-example.png" alt="Ejemplo de registro con correo en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-signup-google">
+                    <h1>Registro con Google</h1>
+                    <p>Si el usuario opta por registrarse usando Google, tras el inicio de sesión exitoso, se mostrarán en secuencia dos diálogos:</p>
+                    <ol>
+                        <li>Un diálogo para que el usuario configure la contraseña de la cuenta (si no la tiene ya establecida). Se debe completar el formulario con los datos requeridos y pulsar el botón de guardado.</li>                        <li>Y otro diálogo para que establezca la contraseña maestra del baúl. Se debe completar el formulario con los datos requeridos y pulsar el botón de guardado.</li>
+                    </ol>
+                    <img src="images/android-signup-google-example.png" alt="Ejemplo de registro con Google en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-logout">
+                    <h1>Cerrar sesión</h1>                    <p>Para cerrar sesión es necesario que haya una sesión activa. Se deberá pulsar el botón de configuración situado en la parte superior izquierda únicamente de la ventana principal de la aplicación. Y pulsar en la sección "Cerrar sesión".</p>
+                    <img src="images/android-logout-example.png" alt="Ejemplo de cerrar sesión en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-language">
+                    <h1>Cambiar idioma</h1>
+                    <p>Para cambiar el idioma, se deberá pulsar el botón de configuración situado en la parte superior izquierda únicamente en la ventana principal de la aplicación. Y pulsar en la sección "Cambiar idioma".</p>
+                    <p>Una vez pulsado, se deberá seleccionar el idioma deseado.</p>
+                    <p>La primera vez que se ejecute la aplicación se cargará el idioma del sistema, o en su defecto, el español.</p>                    <p>En ejecuciones posteriores, se cargará el idioma seleccionado previamente.</p>
+                    <img src="images/android-language-example.png" alt="Ejemplo de cambiar idioma en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-theme">
+                    <h1>Cambiar tema</h1>
+                    <p>Para cambiar el tema, se deberá pulsar el botón de configuración situado en la parte superior izquierda únicamente en la ventana principal de la aplicación. Y pulsar en la sección que corresponde al tema al que se puede cambiar. Si está el tema claro activado aparecerá la opción "Tema oscuro" o viceversa.</p>                    <p>La próxima vez que se ejecute la aplicación se mantendrá el tema seleccionado previamente.</p>
+                    <img src="images/android-theme-example.png" alt="Ejemplo de cambiar tema en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-help">
+                    <h1>Abrir la ayuda</h1>                    <p>Para abrir la ayuda, se deberá pulsar el botón de configuración situado en la parte superior izquierda únicamente en la ventana principal de la aplicación. Y pulsar en la sección "Ayuda".</p>
+                    <img src="images/android-help-example.png" alt="Ejemplo de abrir ayuda en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-unlock-vault">
+                    <h1>Desbloquear baúl de contraseñas</h1>
+                    <p>Para desbloquear el baúl, será necesario introducir la contraseña maestra establecida durante el registro.</p>                    <p>En caso de no recordarla, no se podrá acceder a las contraseñas almacenadas y será necesario contactar con soporte.</p>
+                    <img src="images/android-unlock-vault-example.png" alt="Ejemplo de desbloquear baúl en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-filter-passwords">
+                    <h1>Filtrar contraseñas por estado de seguridad</h1>
+                    <p>Se pueden listar todas las contraseñas almacenadas, bastará con pulsar el botón de filtrado correspondiente.</p>                    <p>Las contraseñas que presenten un icono de advertencia indicarán problemas de seguridad sin resolver. También se puede filtrar la lista para visualizar únicamente estas contraseñas.</p>
+                    <img src="images/android-filter-passwords-example.png" alt="Ejemplo de filtrar contraseñas en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-sort-passwords">
+                    <h1>Listar las contraseñas ordenadas según un criterio</h1>
+                    <p>Para ordenar las contraseñas según un criterio, se deberá pulsar el botón correspondiente y seleccionar el criterio deseado. Los criterios disponibles son:</p>
+                    <ul>
+                        <li>De más antigua a más reciente</li>
+                        <li>De más reciente a más antigua</li>
+                        <li>De la A a la Z</li>
+                        <li>De la Z a la A</li>
+                    </ul>
+                    <img src="images/android-sort-passwords-example.png" alt="Ejemplo de ordenar contraseñas en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-search-passwords">
+                    <h1>Buscar contraseñas</h1>
+                    <p>Para buscar contraseñas, se deberá pulsar sobre la barra de búsqueda que se encuentra encima del filtrado de contraseñas y escribir en el buscador. Los criterios de búsqueda disponibles son:</p>
+                    <ul>
+                        <li>Descripción</li>
+                        <li>Usuario</li>
+                        <li>URL</li>
+                    </ul>
+                    <img src="images/android-search-passwords-example.png" alt="Ejemplo de buscar contraseñas en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-generate-password">
+                    <h1>Generar una nueva contraseña</h1>
+                    <p>Para crear una nueva contraseña, desde la ventana principal bastará con pulsar el botón "+".</p>
+                    <p>Se mostrará la ventana de generación de contraseñas personalizada.</p>
+                    <p>Por defecto, la contraseña incluirá al menos una letra mayúscula, una letra minúscula, un número, un carácter especial y tendrá una longitud de 12 caracteres.</p>
+                    <p>Podremos personalizarla a nuestro gusto y regenerarla cuantas veces queramos.</p>                    <p>Una vez se obtiene la contraseña deseada, puede guardarse pulsando el botón correspondiente.</p>
+                    <img src="images/android-generate-password-example.png" alt="Ejemplo de generar contraseña en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-save-password">
+                    <h1>Guardar contraseña generada</h1>
+                    <p>Se mostrará un cuadro de diálogo para establecer los siguientes datos:</p>
+                    <ul>
+                        <li>Descripción (obligatorio): Identificador de la contraseña</li>
+                        <li>Usuario (opcional): Nombre de usuario o correo electrónico asociado</li>
+                        <li>URL (opcional): Plataforma asociada</li>
+                        <li>Contraseña (obligatorio): Contraseña que puede escribirse manualmente o generarse con el botón correspondiente</li>
+                    </ul>
+                    <p>Una vez definidos los datos, se deberá pulsar el botón "Guardar".</p>                    <p>Si no se desea guardar, se podrá pulsar "Cancelar" para volver a la ventana de generación de contraseñas.</p>
+                    <img src="images/android-save-password-example.png" alt="Ejemplo de guardar contraseña en Android">
+                </section>
+
+                <hr>
+
+                <section id="android-view-password">
+                    <h1>Consultar la información de una contraseña</h1>
+                    <p>Para consultar la información de una contraseña, se deberá pulsar sobre ella.</p>
+                    <p>Aparecerá un cuadro de diálogo con todos los datos de la contraseña, un indicador de fortaleza y una sección con información sobre su estado de seguridad.</p>
+                    
+                    <h3>Indicador de fortaleza</h3>
+                    <p>El indicador de fortaleza puede tener los siguientes valores:</p>
+                    <ol>
+                        <li>Muy débil: La contraseña es muy fácil de adivinar, debe modificarse</li>
+                        <li>Débil: La contraseña es fácil de adivinar, debe modificarse</li>
+                        <li>Media: La contraseña es aceptable, pero mejorable</li>
+                        <li>Fuerte: La contraseña es difícil de adivinar, pero mejorable</li>
+                        <li>Muy fuerte: La contraseña es muy difícil de adivinar, no requiere cambios</li>
+                    </ol>
+
+                    <h3>Estado de seguridad</h3>
+                    <p>Los posibles mensajes de estado de seguridad son:</p>
+                    <ul>
+                        <li>Sin problemas de seguridad: Los datos están seguros</li>
+                        <li>Contraseña comprometida: Ha sido expuesta y debe modificarse</li>
+                        <li>Contraseña duplicada: Se ha usado en varias plataformas, se recomienda modificarla</li>
+                        <li>Contraseña débil: Es fácil de adivinar y debe modificarse</li>
+                        <li>URL comprometida: La URL ha sido expuesta o está vinculada a actividades sospechosas</li>
+                    </ul>
+                      <p>Por seguridad, la contraseña aparecerá oculta. Para mostrarla, bastará con pulsar sobre el ojo que aparece junto a ella. También será posible eliminarla pulsando el botón "Eliminar".</p>
+                    <img src="images/android-view-password-example.png" alt="Ejemplo de consultar información de contraseña en Android">
                 </section>
 
         </main>
